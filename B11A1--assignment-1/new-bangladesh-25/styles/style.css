@@ -1,4 +1,11 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 .fira-sans-bold {
     font-family: "Fira Sans", serif;
     font-style: normal;
@@ -54,33 +61,52 @@ nav ul li{
 .text-center{
     text-align: left;
 }
-
-.banner{
+.banner {
     background-color: #C6E4D6;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 60px 40px;
+    border-radius: 24px;
+    margin: 20px auto;
+    gap: 32px;
+    max-width: 1200px;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+/* .banner{ */
+    background-color: #C6E4D6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 100px 80px;
     border-radius: 24px;
     margin: 0 160px;
-    gap: 64px;
+    gap: 64px; 
 }
-.banner-content{
+/* .banner-content{ */
     max-width: 622px;
     max-height: 326px;
+    display: block;
 }
 
 
 .banner-name{
     font-weight: 500;
     font-size: 24px;
-    color: #0E0E0E 80%;
+    color: #0E0E0E 50%;
 }
 
 .banner-title{
     font-weight: bold;
     font-size: 56px;
     color: #0E0E0E 100%;
-
+    /* max-width: 500px; */
+    /* width: 50%; */
 }
 
 .banner-profile-pic{
@@ -100,55 +126,58 @@ nav ul li{
 
 }
 .pillars{
-    margin: 0 160px;
+    margin: 0 80px;
     gap: 80px;
 }
 .section-title{
     font-weight: bold;
     font-size: 40px;
 }
+
+
 /* vissions-style */
 
 .vissions-container{
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    gap: 24px 24px;
+    border: 32px;
+    margin: 16px;
+    height:300px;
+    max-width: 1280px;
 }
 .vissions{
     padding: 32px;
     border-radius: 16px;
-    margin: 0 160px;
+    margin: 0 80px;
 }
+.v-margin{
+    margin: 0 80px;}
 
-.box-color-1{
-    background-color: #C6E4D6;
-}
-
- .box-color-2{
-    background-color: #5490F5;
- }
- .box-color-3{
-    background-color: #F7EBCF;
- }
- .box-color-4{
-    background-color:green ;
- }
-.box-color-5{
-    background-color: gray;
-}
+.box-color-1 { background-color: #C6E4D6; }
+.box-color-2 { background-color: #5490F5; }
+.box-color-3 { background-color: #09A15C }
+.box-color-4 { background-color: green; }
+.box-color-5 { background-color: gray; }
 
  .btn-3{
     color: white;
- }
+ } 
+
+
+
+
 
  .news-card{
     display: flex;
-    padding: 48px;
+    background-color: #C6E4D6;
+    padding: 24px;
     border-radius: 24px;
     gap: 32px;
-    margin: 0 160px;
+     margin: 24px 80px;
  }
  .margin{
-    margin: 0 160px;
+    margin: 0 80px;
  }
  .news-card img{
     border-radius: 24px;
@@ -164,16 +193,43 @@ nav ul li{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    margin-top: 80px;
+    margin-bottom: 24px;
  }
  .donation-description{
     font-size: 16px;
+    font-weight: 400;
     text-align: center;
  }
  .btn-container{
-    height: 128px;
-    width: 252px;
-    padding: 40px;
+    font-size: 40;
+    font-weight: bold;
+    height: 90px;
+    width: 260px;
+    padding: 20px;
+    margin: 32px;
     border-radius: 16px;
     gap: 24px;
-    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+ }
+ .btn-color{
+    background-color:#FFFFFF;
+ }
+
+ .btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 80px;
+ }
+
+
+ .user-input{
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    color:#0E0E0E;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 32px 110px;
  }
