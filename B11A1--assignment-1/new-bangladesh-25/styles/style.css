@@ -167,7 +167,6 @@ nav ul li{
 
 
 
-
  .news-card{
     display: flex;
     background-color: #C6E4D6;
@@ -232,4 +231,26 @@ nav ul li{
     text-align: center;
     padding: 20px 40px;
     margin: 32px 110px;
+ }
+
+ .center-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; 
+ }
+
+ .btn-4{
+    background-color: #006A50;
+    color: white;
+    padding: 17px 34px;
+    border-radius: 8px;
+    margin: 0 80px;
+
+}
+
+
+ .hover-btn:hover{
+    border: 2px solid transparent;
+    transform: scale(1.1);
+    color: rgba(143, 3, 120, 0.918);
  }
